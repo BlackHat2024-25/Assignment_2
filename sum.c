@@ -1,27 +1,18 @@
 #include <stdio.h>
-int main()
-{
 
-    int n, i, sum;
+int main() {
+    int i, sum = 0;
 
-    printf("first natural number is :\n");
-    scanf("%d", &n);
-
-    for (i = 1; i <= n; i++)
-    {
-      printf("%d\n",i);
+    // Print the first 10 natural numbers
+    printf("The first 10 natural numbers are: \n");
+    for (i = 1; i <= 10; ++i) {
+        printf("%d ", i);
+        sum += i; // Add each number to the sum
     }
 
-    sum = n * (n + 1)/2;
+    // Print the sum
+    printf("\nSum of the first 10 natural numbers: %d\n", sum);
 
-    printf("sum of %d natural number is : %d",n,sum);
-    printf("\n");
     return 0;
-
-    
-    
 }
-    
 
-
-    
